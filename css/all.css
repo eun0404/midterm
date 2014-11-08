@@ -48,17 +48,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html{
+	background: #FFF7E8;
+}
 .clear{
   clear:both;
 }
 .wrap{
 	width: 950px;
 	margin: auto;
+	-webkit-box-shadow: 0px 5px 240px -70px rgba(102,102,102,0.75);
+	-moz-box-shadow: 0px 5px 240px -70px rgba(102,102,102,0.75);
+	box-shadow: 0px 5px 240px -36px rgba(102,102,102,0.75);
+	background: #fff;
 }
 .left{
 	width: 300px;
+	height: 60px;
 	float: left;
 	margin-top: 25px;
+	margin-left: 20px;
 }
 .logo a{
 	width: 300px;
@@ -72,7 +81,8 @@ table {
 .right{
 	width: 500px;
 	float: right;
-	margin-top: 25px;
+	margin-top: 35px;
+	margin-right: 20px;
 }
 .search{
 	width: 230px;
@@ -96,6 +106,8 @@ table {
 }
 .user ul li{
 	display: inline-block;
+	background: url('../images/icon_03.png') 10px no-repeat;
+	padding-left: 10px;
 }
 .user{
 	width: 500px;
@@ -103,7 +115,6 @@ table {
 	padding: 10px 0 0 0;
 	float: right;
 	text-align: right;
-	margin-top: 10px;
 }
 .user li a{
 	color: black;
@@ -159,16 +170,15 @@ table {
 	width: 930px;
 	height: 170px;
 	position: relative;
+	margin-top: 20px;
 }
 .event .slide{
-	border: 10px solid #fff;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 930px;
-	height: 170px;
+	width: 950px;
+	height: 200px;
 	overflow: hidden;
-	text-align: left;
 }
 .event .slide p {
 	width: 329px;
@@ -182,7 +192,7 @@ table {
 	z-index: 5;
 	float: right;
 	color: #fefefe;
-	margin: -20px;
+	margin: 5px;
 	line-height: 2em;
 }
 .img1 {
@@ -431,14 +441,15 @@ table {
 100% {opacity: 1;}
 }
 .announcement{
-	margin-top: 40px;
+	margin-top: 20px;
 }
 .ann_info{
-	width: 600px;
+	width: 580px;
 	height: 215px;
 	float: left;
 	padding-top: 20px;
 	border: 1px solid;
+	margin-left: 20px;
 	
 }
 .ann_info ul li{
@@ -481,11 +492,11 @@ table {
 	padding-top: 10px;
 	background: #FFFFB5;
 	position: relative;
-	
 }
 .calendar{
 	float: right;
 	border: 1px solid #696969;
+	margin-right: 20px;
 }
 .news{
 	margin-bottom: 20px;
@@ -525,10 +536,11 @@ table {
 	display: inline-block;
 }
 .link{	
-	height: 80px;
+	height: 145px;
 	text-align: center;
 	margin-top: 30px;
 	border-top: 1px dashed #696969;
+	padding-left: 10px;
 }
 .link img{
 	float: left;
@@ -557,9 +569,10 @@ table {
 	color: #888888;
 }
 .footer{
-	margin-top: 80px;
 	line-height: 1.42em;
 	font-size: 0.5em;
 	text-align: center;
 	background: #BFBFBF;
+	margin-top: 10px;
+	padding: 10px;
 }
