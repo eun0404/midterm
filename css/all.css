@@ -521,8 +521,8 @@ html{
 .newsbox h2{
 	font: bold 1.2em Helvetica, sans-serif;
 	line-height: 1.1em;
-	margin: 15px 0 10px 0;
-	padding: 5px;
+	margin: 0 0 10px 0;
+	padding: 15px;
 }
 .newsbox p{
 	font-size: 0.8em;
@@ -544,13 +544,13 @@ html{
 }
 .link img{
 	float: left;
-	width: 30px;
-	height: 30px;
+	width: 22px;
+	height: 22px;
 	padding-right: 5px;
 }
 .link p{
 	text-align: left;
-	font-size: 1.7em;
+	font-size: 1.3em;
 	margin-top: 20px;
 }
 .link li{
@@ -563,14 +563,14 @@ html{
 	display: block;
 	text-decoration: none;
 	padding: 8px 20px; 
-	background: url('../images/右箭頭.png') 1px no-repeat;
+	background: url('../images/右箭頭.png') 0.5px no-repeat;
 } 
 .link li a:hover{
 	color: #888888;
 }
 .footer{
 	line-height: 1.42em;
-	font-size: 0.5em;
+	font-size: 0.8em;
 	text-align: center;
 	background: #BFBFBF;
 	margin-top: 10px;
