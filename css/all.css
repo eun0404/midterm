@@ -72,7 +72,7 @@ html{
 .logo a{
 	width: 300px;
 	height: 60px;
-	background: url('../images/logo.png');
+	background: url('../images/logo.png') no-repeat;
 	background-size: 100%;
 	float: left;
 	text-indent:-9999px;
@@ -129,13 +129,11 @@ html{
 	display: inline-block;
 }
 .navigation{
-	height: 40px;
+	height: 30px;
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 15px;
 	background: #BFBFBF;
-	padding-top: 5px;
-	border-top: 1px solid #737373;
-	border-bottom: 1px solid #737373;
+	line-height: 10px;
 }
 .navigation li{
 	width: 190px;
@@ -150,7 +148,7 @@ html{
 	padding: 10px 10px; 
 } 
 .navigation li > a:hover{
-	color: #888888;
+	color: #888;
 }
 .navigation li ul{
 	display: none;
@@ -442,61 +440,81 @@ html{
 }
 .announcement{
 	margin-top: 20px;
+	height: 270px;
+}
+.ann1{
+	margin-left: 20px;
+	height: 270px;
+	float: left;
+}
+.ann1 h3{
+	font-size: 1.5em;
+	width: 300px;
+	color: #020c37;
+}
+.post{
+	width: 300px;
+	height: 233px;
+	background: #dcdcdc;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	float: left;
+	background: #fff;
+	padding-top: 10px;
+}
+.post a{
+	text-decoration: none;
+	line-height: 20px;
+}
+.post a:hover{
+	color: #666;
+}
+.post span{
+	width: 300px;
+	height: 30px;
+	display: block;
+	margin-top: 10px;
+	line-height: 10px;
+}
+.ann2{
+	margin-left: 20px;
+	height: 270px;
+	float: left;
+}
+.ann2 h3{
+	font-size: 1.5em;
+	width: 300px;
+	color: #FFA600;
 }
 .ann_info{
-	width: 580px;
-	height: 215px;
+	width: 300px;
+	height: 233px;
+	background: #dcdcdc;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	float: left;
-	padding-top: 20px;
-	border: 1px solid;
-	margin-left: 20px;
-	
+	background: #fff;
+	padding-top: 10px;
 }
-.ann_info ul li{
-	display: block;
-	position: relative;
-}
-.ann_info ul li a{
-	display: block;
-	text-align: center;
+.ann_info a{
 	text-decoration: none;
-	width: 100px;
-	height: 31px;
-	line-height: 30px;
+	line-height: 20px;
 }
-.ann_info ul li ul{
-	display: none;
-	position: absolute;
-	top: 0;
+.ann_info a:hover{
+	color: #666;
 }
-.ann_info ul li ul li a{
-	width: 400px;
-}
-.ann_info ul li:hover a{
+.ann_info span{
+	width: 280px;
 	height: 40px;
-	color: #888;
-	text-decoration: none;
 	display: block;
-	background: #FFDA96;
-	padding-top: 10px;
-}
-.ann_info ul li:hover ul{
-	display: block;
-	position: absolute;
-	left: 30%;
-	z-index: 100;
-}
-.ann_info ul li ul li:hover a{
-	color: #888;
-	text-decoration: none;
-	padding-top: 10px;
-	background: #FFFFB5;
-	position: relative;
+	margin-top: 10px;
+	line-height: 10px;
 }
 .calendar{
 	float: right;
 	border: 1px solid #696969;
-	margin-right: 20px;
+	margin-right: 15px;
+	margin-top: 25px;
 }
 .news{
 	margin-bottom: 20px;
@@ -519,14 +537,13 @@ html{
 	color: #666;
 }
 .newsbox h2{
-	font: bold 1.2em Helvetica, sans-serif;
+	font: bold 1.1em Helvetica, sans-serif;
 	line-height: 1.1em;
-	margin: 0 0 10px 0;
 	padding: 15px;
 }
 .newsbox p{
-	font-size: 0.8em;
-	padding: 5px;
+	font-size: 0.9em;
+	padding: 15px;
 }
 .newsbox img{
 	padding: 20px;
