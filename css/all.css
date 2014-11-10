@@ -97,7 +97,7 @@ html{
 	float: left;
 	width: 230px;
 }
-.input[type="text"]{
+.input input[type="text"]{
 	width: 200px;
 	height: 20px;
 }
