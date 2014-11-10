@@ -97,6 +97,10 @@ html{
 	float: left;
 	width: 230px;
 }
+.input[type="text"]{
+	width: 200px;
+	height: 20px;
+}
 .input a{
 	background: #020c37;
 	display: block;
