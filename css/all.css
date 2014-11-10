@@ -95,6 +95,7 @@ html{
 }
 .input{
 	float: left;
+	width: 230px;
 }
 .input a{
 	background: #020c37;
