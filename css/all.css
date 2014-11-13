@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 微軟正黑體;
+	font-family: Verdana, Arial,"微軟正黑體", "新細明體", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -93,19 +93,25 @@ html{
 	float: right;
 	border: 1px solid #020c37;
 }
-.input{
+.search input[type="text"]{
+	height: 21px;
+	width: 180px;
+	position: relative;
 	float: left;
+	border:0;
+	margin:0;
+	padding:0; 
 }
-.input a{
-	background: #020c37;
-	display: block;
-	color: white;
-	width: 57px;
-	height: 19px;
-	padding-top: 2px;
-	text-decoration: none;
-	text-align: center;
-	float: right;
+.search input[type="submit"]{
+	height: 21px;
+	width: 50px;
+	position: relative;
+	float: left;
+	background-color: #666;
+	border:1;
+	margin:0;
+	padding:0;
+	color: #fff;
 }
 .user ul li{
 	display: inline-block;
@@ -139,7 +145,7 @@ html{
 	text-align: center;
 	margin-top: 5px;
 	background: #020c37;
-	padding-top: 5px;
+	//padding-top: 5px;
 	//border-top: 1px solid #737373;
 	//border-bottom: 1px solid #737373;
 	line-height: 8px;
@@ -158,12 +164,14 @@ html{
 } 
 .navigation li > a:hover{
 	color: #666;
+	background-color:orange;
+	height: 10px;
 }
 .navigation li ul{
 	display: none;
 	float: left;
 	left: 0;
-	margin-top: 2px;
+	top:30px;
 	list-style: none;
 	position: absolute;
 	background: #aaa;
@@ -536,7 +544,7 @@ html{
 }
 .newsbox{
 	width: 300px;
-	height: 480px;
+	height: 550px;
 	float: left;
 	margin-left: 10px;
 	//background: #e0ffff;
@@ -551,13 +559,14 @@ html{
 }
 .newsbox h2{
 	font: bold 1.1em Helvetica, sans-serif;
-	line-height: 1.1em;
+	line-height: 1.5em;
 	//margin: 0 0 10px 0;
 	padding: 15px;
 }
 .newsbox p{
 	font-size: 0.9em;
 	padding: 15px;
+	line-height: 25px;
 }
 .newsbox img{
 	padding: 20px;
@@ -609,7 +618,7 @@ html{
 	background: #020c37;
 	margin-top: 10px;
 	padding: 10px;
-	color: #fff;
+	color: white;
 }
 .important{
 	width: 600px;
@@ -722,7 +731,7 @@ html{
 }
 .frame{
 	width: 930px;
-	height: 500px;
+	//height: 500px;
 	margin: 0 auto;
 	margin-top: 15px;
 	padding-top: 10px;
@@ -732,9 +741,23 @@ html{
 .bar{
 	position: relative;
 	float: left;
-	width: 300px;
+	width: 280px;
 	//background-color: #FFFF00;
-	margin-left: 10px;
+	margin-left: 30px;
+}
+.more{
+	height: 20px;
+	width: 300px;
+	position: relative;
+	float: left;
+	margin-left: 140px;
+}
+.more a{
+	text-decoration: none;
+	color: #000;
+}
+.more a:hover{
+	color: orange;
 }
 .bar img{
 	position: relative;
@@ -761,4 +784,7 @@ html{
 .bar li a{
 	text-decoration: none;
 	color: #000;
+}
+.bar li a:hover{
+	color: orange;
 }
