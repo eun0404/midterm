@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -23,7 +23,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: Verdana, Arial,"微軟正黑體", "新細明體", sans-serif;
-	color: #333333;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 html{
-	background: #FFF7E8;
+	background: url(../images/bg.gif);
 }
 .clear{
   clear:both;
@@ -57,22 +56,26 @@ html{
 .wrap{
 	width: 950px;
 	margin: auto;
-	-webkit-box-shadow: 0px 5px 240px -70px rgba(102,102,102,0.75);
-	-moz-box-shadow: 0px 5px 240px -70px rgba(102,102,102,0.75);
-	box-shadow: 0px 5px 240px -36px rgba(102,102,102,0.75);
+	//-webkit-box-shadow: 0px 5px 240px -70px rgba(102,102,102,0.75);
+	//-moz-box-shadow: 0px 5px 240px -70px rgba(102,102,102,0.75);
+	//box-shadow: 0px 5px 240px -36px rgba(102,102,102,0.75);
 	background: #fff;
 }
 .left{
 	width: 300px;
-	height: 60px;
+	//height: 60px;
 	float: left;
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-left: 20px;
+}
+.header{
+	height: 50px;
+
 }
 .logo a{
 	width: 300px;
 	height: 60px;
-	background: url('../images/logo.png') no-repeat;
+	background: url('../images/logo.png');
 	background-size: 100%;
 	float: left;
 	text-indent:-9999px;
@@ -81,33 +84,50 @@ html{
 .right{
 	width: 500px;
 	float: right;
-	margin-top: 35px;
+	margin-top: 22px;
 	margin-right: 20px;
 }
 .search{
 	width: 230px;
 	height: 21px;
 	float: right;
-	border: 1px solid #FFC559;
+	border: 1px solid #020c37;
 }
-.input{
+.search input[type="text"]{
+	height: 21px;
+	width: 180px;
+	position: relative;
 	float: left;
+<<<<<<< HEAD
+	border:0;
+	margin:0;
+	padding:0; 
+=======
+	width: 230px;
 }
-.input a{
-	background: #FFA600;
-	display: block;
-	color: white;
-	width: 57px;
-	height: 19px;
-	padding-top: 2px;
-	text-decoration: none;
-	text-align: center;
-	float: right;
+.input input[type="text"]{
+	width: 160px;
+	height: 20px;
+>>>>>>> origin/gh-pages
+}
+.search input[type="submit"]{
+	height: 21px;
+	width: 50px;
+	position: relative;
+	float: left;
+	background-color: #666;
+	border:1;
+	margin:0;
+	padding:0;
+	color: #fff;
 }
 .user ul li{
 	display: inline-block;
-	background: url('../images/icon_03.png') 10px no-repeat;
-	padding-left: 10px;
+	//background: url('../images/icon.gif') 10px no-repeat;
+	border-right: 1px solid #888;
+}
+.enterman{
+	border-right: none !important ;
 }
 .user{
 	width: 500px;
@@ -131,9 +151,12 @@ html{
 .navigation{
 	height: 30px;
 	text-align: center;
-	margin-top: 15px;
-	background: #BFBFBF;
-	line-height: 10px;
+	margin-top: 5px;
+	background: #020c37;
+	//padding-top: 5px;
+	//border-top: 1px solid #737373;
+	//border-bottom: 1px solid #737373;
+	line-height: 8px;
 }
 .navigation li{
 	width: 190px;
@@ -142,22 +165,24 @@ html{
 	position: relative;
 }
 .navigation li a{
-	color: #4a4a4a;
+	color: #fff;
 	display: block;
 	text-decoration: none;
 	padding: 10px 10px; 
 } 
 .navigation li > a:hover{
-	color: #888;
+	color: #666;
+	background-color:orange;
+	height: 10px;
 }
 .navigation li ul{
 	display: none;
 	float: left;
 	left: 0;
-	margin: 0;
+	top:30px;
 	list-style: none;
 	position: absolute;
-	background: #E8E8E8;
+	background: #aaa;
 	z-index: 50;
 }
 .navigation li:hover > ul{
@@ -451,6 +476,7 @@ html{
 	font-size: 1.5em;
 	width: 300px;
 	color: #020c37;
+	font-weight: bold;
 }
 .post{
 	width: 300px;
@@ -465,6 +491,7 @@ html{
 .post a{
 	text-decoration: none;
 	line-height: 20px;
+	color: black;
 }
 .post a:hover{
 	color: #666;
@@ -485,6 +512,7 @@ html{
 	font-size: 1.5em;
 	width: 300px;
 	color: #FFA600;
+	font-weight: bold;
 }
 .ann_info{
 	width: 300px;
@@ -499,6 +527,7 @@ html{
 .ann_info a{
 	text-decoration: none;
 	line-height: 20px;
+	color: black;
 }
 .ann_info a:hover{
 	color: #666;
@@ -522,32 +551,35 @@ html{
 	border-top: 1px dashed #696969;
 }
 .newsbox{
-	width: 270px;
-	height: 440px;
+	width: 300px;
+	height: 550px;
 	float: left;
-	margin: 20px 20px 0;
-	background: #ffffcc;
-	border: 1px solid #cbcbcb;
-	border-radius: 10px 10px 10px 10px;
+	margin-left: 10px;
+	//background: #e0ffff;
+	//border: 1px solid #cbcbcb;
 }
 .newsbox a{
 	text-decoration: none;
+	color: #aa0000;	
 }
 .newsbox a:hover{
 	color: #666;
 }
 .newsbox h2{
 	font: bold 1.1em Helvetica, sans-serif;
-	line-height: 1.1em;
+	line-height: 1.5em;
+	//margin: 0 0 10px 0;
 	padding: 15px;
 }
 .newsbox p{
 	font-size: 0.9em;
 	padding: 15px;
+	line-height: 25px;
 }
 .newsbox img{
 	padding: 20px;
-	width: 230px;
+	width: 270px;
+	height: 250px;
 }
 .link ul li{
 	display: inline-block;
@@ -558,6 +590,7 @@ html{
 	margin-top: 30px;
 	border-top: 1px dashed #696969;
 	padding-left: 10px;
+	position: relative;
 }
 .link img{
 	float: left;
@@ -569,6 +602,7 @@ html{
 	text-align: left;
 	font-size: 1.3em;
 	margin-top: 20px;
+	font-weight: bold;
 }
 .link li{
 	width: 200px;
@@ -580,7 +614,7 @@ html{
 	display: block;
 	text-decoration: none;
 	padding: 8px 20px; 
-	background: url('../images/右箭頭.png') 0.5px no-repeat;
+	background: url('../images/arrow.png') 0.5px no-repeat;
 } 
 .link li a:hover{
 	color: #888888;
@@ -589,7 +623,179 @@ html{
 	line-height: 1.42em;
 	font-size: 0.8em;
 	text-align: center;
-	background: #BFBFBF;
+	background: #020c37;
 	margin-top: 10px;
 	padding: 10px;
+	color: white;
 }
+.important{
+	width: 600px;
+	float: left;
+	background-color: #F5FFFA;
+	padding-top: 5px;
+	margin-top: 13px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+.important span{
+	width: 600px;
+	font-size: 22px;
+	font-weight: bold;
+	position: relative;
+	float: left;
+	margin-bottom: 10px;
+	color: #009FCC;
+}
+.time{
+	width: 180px;
+	position: relative;
+	float: left;
+	//background: #EEFFBB;
+}
+.time li{
+	font-size: 18px;
+	line-height: 30px;
+	border-bottom: 1px solid #000;
+}
+.schedule{
+	width: 400px;
+	position: relative;
+	float: left;
+	//background-color: #9999FF;
+}
+.schedule li{
+	font-size: 18px;
+	line-height: 30px;
+	border-bottom: 1px solid #000;
+}
+.schedule li a{
+	text-decoration: none;
+	color: #000;
+}
+.schedule li a:hover{
+	color: #0000CC;
+}
+.usual_link{
+	width: 300px;
+	//height: 60px;
+	//border-style: double;
+	//border-width: 1px;
+	//border-color: #000;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding-bottom: 13px;
+	background-color: #ffffcc;
+}
+.usual_link p{
+	font-size: 22px;
+	position: relative;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+	color: #FFAA33;
+}
+.usual_link ul{
+	width: 230px;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	
+}
+.usual_link ul li{
+	width: 195px;
+	position: relative;
+	float: left;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.usual_link ul li a{
+	position: relative;
+	float: left;
+	text-decoration: none;
+	color: #000;
+	padding-left: 15px;
+	background: url('../images/icon.gif') 0.5px no-repeat; 
+}
+.usual_link li a:hover{
+	color: #888888;
+}
+.id{
+	height: 30px;
+	position: relative;
+	float: left;
+	//background-color: #888;
+	margin-top: 20px;
+	margin-left: 12px;
+}
+.id span{
+	font-size: 30px;
+	color: #888888;
+	font-weight: bold;
+	
+}
+.frame{
+	width: 930px;
+	//height: 500px;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-top: 10px;
+	//background-color: #00BBFF;
+	border-top: 1px dashed #000;
+}
+.bar{
+	position: relative;
+	float: left;
+	width: 280px;
+	//background-color: #FFFF00;
+	margin-left: 30px;
+}
+.more{
+	height: 20px;
+	width: 300px;
+	position: relative;
+	float: left;
+	margin-left: 140px;
+}
+.more a{
+	text-decoration: none;
+	color: #000;
+}
+.more a:hover{
+	color: orange;
+}
+.bar img{
+	position: relative;
+	width: 185px;
+}
+.bar ul{
+	position: relative;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	list-style-position: inside;
+	list-style-image: url(../images/icon.gif);
+	//background-color: #33FF33;
+
+}
+.bar li{
+	width: 280px;
+	position: relative;
+	float: left;
+	line-height: 3em;
+	padding-left: 1px;
+	font-size: 16px;
+}
+.bar li a{
+	text-decoration: none;
+	color: #000;
+}
+<<<<<<< HEAD
+.bar li a:hover{
+	color: orange;
+}
+=======
+>>>>>>> origin/gh-pages

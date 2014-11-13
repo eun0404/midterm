@@ -1,4 +1,4 @@
-ï»¿/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: Verdana, Arial,"å¾®è»Ÿæ­£é»‘é«”", "æ–°ç´°æ˜Žé«”", sans-serif;
+	font-family: Verdana, Arial,"·L³n¥¿¶ÂÅé", "·s²Ó©úÅé", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -98,9 +98,17 @@ html{
 	width: 180px;
 	position: relative;
 	float: left;
+<<<<<<< HEAD
 	border:0;
 	margin:0;
 	padding:0; 
+=======
+	width: 230px;
+}
+.input input[type="text"]{
+	width: 160px;
+	height: 20px;
+>>>>>>> origin/gh-pages
 }
 .search input[type="submit"]{
 	height: 21px;
@@ -785,6 +793,9 @@ html{
 	text-decoration: none;
 	color: #000;
 }
+<<<<<<< HEAD
 .bar li a:hover{
 	color: orange;
 }
+=======
+>>>>>>> origin/gh-pages
