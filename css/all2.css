@@ -98,17 +98,9 @@ html{
 	width: 180px;
 	position: relative;
 	float: left;
-<<<<<<< HEAD
 	border:0;
 	margin:0;
 	padding:0; 
-=======
-	width: 230px;
-}
-.input input[type="text"]{
-	width: 160px;
-	height: 20px;
->>>>>>> origin/gh-pages
 }
 .search input[type="submit"]{
 	height: 21px;
